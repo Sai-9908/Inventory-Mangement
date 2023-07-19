@@ -17,7 +17,7 @@ import ComponentSkeleton from './ComponentSkeleton';
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
   [`&.${tableCellClasses.head}`]: {
-    backgroundColor: '#1d276b',
+    backgroundColor: '#2a3693f5',
     color: theme.palette.common.white,
   },
   [`&.${tableCellClasses.body}`]: {
