@@ -26,6 +26,9 @@ import { Formik } from 'formik';
 import FirebaseSocial from './FirebaseSocial';
 import AnimateButton from 'components/@extended/AnimateButton';
 
+//axios
+// import axios from "axios";
+
 // assets
 import { EyeOutlined, EyeInvisibleOutlined } from '@ant-design/icons';
 
@@ -48,8 +51,8 @@ const AuthLogin = () => {
     <>
       <Formik
         initialValues={{
-          email: 'info@codedthemes.com',
-          password: '123456',
+          email: '',
+          password: '',
           submit: null
         }}
         validationSchema={Yup.object().shape({
@@ -57,6 +60,10 @@ const AuthLogin = () => {
           password: Yup.string().max(255).required('Password is required')
         })}
         onSubmit={async (values, { setErrors, setStatus, setSubmitting }) => {
+          // axios.post(`${baseUrl.baseUrl}/v1/auth/signin`, {
+          //   email: values.email,
+          //   password: values.password,
+          // })
           try {
             localStorage.setItem(
               "username", values.email
