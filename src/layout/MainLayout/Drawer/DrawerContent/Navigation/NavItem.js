@@ -56,7 +56,7 @@ const NavItem = ({ item, level }) => {
       selected={isSelected}
       sx={{
         color:'white',
-        bgcolor:"#1D276B",
+        bgcolor:"#2A3693",
         zIndex: 1201,
 
         pl: drawerOpen ? `${level * 28}px` : 1.5,

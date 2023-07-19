@@ -21,16 +21,11 @@ const AuthWrapper = ({ children }) => (
         sx={{ minHeight: { xs: 'calc(100vh - 134px)', md: 'calc(100vh - 112px)' } }}
         alignItems="center"
         justifyContent="center">
-        <img src={Background} alt="backgroundimg" style={{ backgroundSize: 'cover', backgroundRepeat: 'no-repeat', width: 'auto', maxHeight: '80vh' }}></img>
+        <img src={Background} alt="backgroundimg" style={{backgroundRepeat: 'no-repeat', width: 'auto', maxHeight: '80vh' }}></img>
       </Grid>
     </Grid>
     <Grid
       container
-      direction="column"
-      justifyContent="flex-end"
-      sx={{
-        minHeight: '100vh'
-      }}
     >
       {/* <Grid item xs={12} sx={{ ml: 3 }}>
         <Logo />  

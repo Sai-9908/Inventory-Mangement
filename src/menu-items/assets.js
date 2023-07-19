@@ -20,41 +20,41 @@ const icons = {
 
 // ==============================|| MENU ITEMS - UTILITIES ||============================== //
 
-const utilities = {
-  id: 'utilities',
+const Assets = {
+  id: 'Assets',
   title: 'Assets',
   type: 'group',
   children: [
     {
-      id: 'util-typography',
+      id: 'Category',
       title: 'Category',
       type: 'item',
-      url: '/app/Category',
+      url: '/app/category',
       icon: icons.FontSizeOutlined
     },
     {
-      id: 'util-color',
-      title: 'Sub category',
+      id: 'Sub-Category',
+      title: 'Sub-category',
       type: 'item',
-      url: '/app/Subcategory',
+      url: '/app/subcategory',
       icon: icons.BgColorsOutlined
     },
     {
-      id: 'util-shadow',
+      id: 'Brand',
       title: 'Brand',
       type: 'item',
-      url: '/app/Brand',
+      url: '/app/brand',
       icon: icons.BarcodeOutlined
     },
     {
-      id: 'ant-icons',
+      id: 'DealersList',
       title: 'Dealers',
       type: 'item',
-      url: '/app/Dealers',
+      url: '/app/dealers',
       icon: icons.AntDesignOutlined,
       breadcrumbs: false
     }
   ]
 };
 
-export default utilities;
+export default Assets;
